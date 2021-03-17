@@ -14,12 +14,45 @@
 // 4.  If the user guess is lower than the computer answer - nudge him or her to guess higher
 // 5.  Handle the case when a user loses
 
+
+
+function guessNum(){
+    let numGuess = prompt('Please guess a number between 0 and 10')
+    const rando = Math.floor(Math.random() * 10 + 1)
+    console.log(numGuess);
+    if(numGuess > 10){
+        console.log('Your number is too big')
+    } else if(numGuess < 0){
+        console.log('Your number is too low')
+    } else if(numGuess === rando){
+        alert('You won!!')
+    } else if(numGuess < rando){
+        alert('Guess higher')
+    } else if(numGuess > rando){
+        alert('Your number is lower')
+    }
+}
+
+guessNum();
+
+function randNum() {
+    // for(i = 0; i <= 10; i++){
+    //     let num = Math.random(i) 
+    //     alert(num);
+
+    const rando = Math.floor(Math.random() * 10 + 1)
+    console.log(rando);
+}
+
+randNum();
+
+function num(min, max){
+    return Math.random() * (max - min) + min;
+
+}
+
 // *** You will need to explore documentation on parseInt(), prompt, alert, Math.floor(), and Math.random()
 
 //? not required:  If you liked to style it, feel free to add a stylesheet to your HTML.
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
-
-for(i = 0; i <=10; i++){
-    console.log(i);
-}
