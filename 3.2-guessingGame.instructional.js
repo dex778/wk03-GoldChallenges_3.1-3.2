@@ -35,22 +35,6 @@ function guessNum(){
 
 guessNum();
 
-function randNum() {
-    // for(i = 0; i <= 10; i++){
-    //     let num = Math.random(i) 
-    //     alert(num);
-
-    const rando = Math.floor(Math.random() * 10 + 1)
-    console.log(rando);
-}
-
-randNum();
-
-function num(min, max){
-    return Math.random() * (max - min) + min;
-
-}
-
 // *** You will need to explore documentation on parseInt(), prompt, alert, Math.floor(), and Math.random()
 
 //? not required:  If you liked to style it, feel free to add a stylesheet to your HTML.
