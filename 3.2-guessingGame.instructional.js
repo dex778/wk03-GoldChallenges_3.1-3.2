@@ -34,12 +34,12 @@ function guessNum() {
         console.log('Your number is too big')
     } else if(numGuess < 0){
         console.log('Your number is too low')
-    } else if(numGuess === rando){
-        alert('You won!!')
     } else if(numGuess < rando){
         alert('Guess higher')
     } else if(numGuess > rando){
         alert('Your number is lower')
+    } else if(numGuess === rando){
+        alert('You won!!')
     } 
 
 }
