@@ -15,11 +15,21 @@
 // 5.  Handle the case when a user loses
 
 
+// let guess =  document.getElementById('guess')
 
-function guessNum(){
+// let button = document.querySelector('.guess');
+// button.addEventListener('click', guessNum);
+// document.body.appendChild(button)
+document.getElementById('guess').onclick = gues
+button.addEventListener('click', guessNum);
+
+
+function guessNum() {
+
     let numGuess = prompt('Please guess a number between 0 and 10')
-    const rando = Math.floor(Math.random() * 10 + 1)
+    const rando = Math.floor(Math.random() * 10)
     console.log(numGuess);
+    console.log(rando)
     if(numGuess > 10){
         console.log('Your number is too big')
     } else if(numGuess < 0){
@@ -30,10 +40,17 @@ function guessNum(){
         alert('Guess higher')
     } else if(numGuess > rando){
         alert('Your number is lower')
-    }
+    } 
+
 }
 
 guessNum();
+
+
+
+
+
+
 
 // *** You will need to explore documentation on parseInt(), prompt, alert, Math.floor(), and Math.random()
 
